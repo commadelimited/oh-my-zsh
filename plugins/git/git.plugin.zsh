@@ -1,5 +1,7 @@
 # Aliases
 alias g='git'
+alias gd='git diff'
+alias gfo='git fetch origin'
 compdef g=git
 alias gst='git status'
 compdef _git gst=git-status
