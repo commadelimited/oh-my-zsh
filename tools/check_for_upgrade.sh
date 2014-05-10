@@ -30,7 +30,7 @@ then
     _update_zsh_update && return 0;
   fi
 
-  epoch_diff=$(($(_current_epoch) - $LAST_EPOCH))
+  epoch_diff=0 #$(($(_current_epoch) - $LAST_EPOCH))
   if [ $epoch_diff -gt $epoch_target ]
   then
     if [ "$DISABLE_UPDATE_PROMPT" = "true" ]
